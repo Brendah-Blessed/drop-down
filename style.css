@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.13), rgba(10, 140, 226, 0.356)), url('./coffe.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.menu-bar{
+    background: rgba(11, 148, 240,0.5);
+    color: white;
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: center;
+}
+.menu-bar ul li{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color:blue;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    border-bottom: 1px solid #fff;
+}
+.sub-menu-1 ul li:hover{
+    color: #f50a77;
+}
+.sub-menu-2{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    background-color:blue;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul{
+    display: flex;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li{
+    border-bottom: 1px solid #fff;
+}
+.sub-menu-2 ul li:hover{
+    color: #f50a77;
+}
